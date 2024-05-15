@@ -60,6 +60,7 @@ public class StudentController {
     @GetMapping("/students/{firstName}/{lastName}/")
     public Student studentPathVariable(@PathVariable("firstName") String firstName,
             @PathVariable("lastName") String lastName) {
+
         return new Student(firstName, lastName);
     }
 
